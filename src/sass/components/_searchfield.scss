@@ -1,0 +1,39 @@
+.search {
+  position: relative;
+  &-input {
+    position: relative;
+    width: 470px;
+    height: 40px;
+    padding: 10px 42px 10px 25px;
+    border: none;
+    @include border-radius(30px, 30px, 30px, 30px);
+    background: $lightblue;
+    color: $primary-color;
+    font-size: 14px;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    background: $primary-color url("../img/searchimg.png") no-repeat center;
+    right: 0;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: none;
+    @include border-radius(50%, 50%, 50%, 50%);
+    right: 0;
+  }
+}
+
+::placeholder {
+  color: $primary-color;
+}
+
+@include breakpoint(mobile) {
+  .search-input {
+    width: 100%;
+  }
+}
