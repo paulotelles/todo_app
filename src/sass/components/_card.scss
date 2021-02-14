@@ -2,7 +2,7 @@
   position: relative;
   padding: 30px;
   background: $primary-color-light;
-  max-width: 255px;
+  width: 255px;
   @include border-radius(10px, 10px, 10px, 10px);
 
   &-date {
