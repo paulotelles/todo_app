@@ -8,27 +8,133 @@
 //--------------------------
 
 @import "../components/searchfield";
+@import "../components/button";
+@import "../components/radiofilter";
+@import "../components/card";
 
 // -------------------------
 //  PAGE STYLE
 //--------------------------
 .headerarea {
   width: 90%;
+  max-width: 1066px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
   padding-top: 21px;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.logoarea {
+  margin-right: 20px;
 }
 
 .logo {
   width: 100%;
 }
 
-@include breakpoint(mobile) {
-  .headerarea {
+.mainarea {
+  width: 90%;
+  max-width: 1066px;
+  margin: 110px auto 0;
+  &-header {
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: $darkgray;
+    margin-right: 37px;
+  }
+  &-tasks {
+    display: flex;
+  }
+  &-filter {
+    display: flex;
+    align-items: center;
+  }
+  &-cardarea {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 15px;
+  }
+}
+
+.filterarea {
+  margin-left: 28px;
+  display: flex;
+  align-items: center;
+}
+
+.overlay {
+  display: none;
+}
+
+.overlay-active {
+  position: fixed;
+  /* Sit on top of the page content */
+  display: block;
+  /* Hidden by default */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* Black background with opacity */
+  z-index: 2;
+  /* Specify a stack order in case you're using a different order for other elements */
+  transition: 0.3s ease all;
+}
+
+@include breakpoint(tablet-max) {
+  .headerarea {
     justify-content: center;
+  }
+
+  .mainarea-header {
+    justify-content: center;
+    flex-wrap: wrap;
     row-gap: 20px;
+  }
+}
+
+@include breakpoint(mobile) {
+  .mainarea {
+    margin-top: 70px;
+    &-header {
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 20px;
+    }
+
+    &-tasks {
+      flex-direction: column;
+      align-items: center;
+    }
+    &-title {
+      margin-right: 0;
+    }
+    &-filter {
+      flex-direction: column;
+      align-items: baseline;
+    }
+    &-cardarea {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .filterarea {
+    margin-left: 0;
   }
 }

@@ -6,4 +6,6 @@
   color: $white;
   padding: 8px 22px;
   @include border-radius(3px, 3px, 3px, 3px);
+  border: none;
+  font-family: $primary-font;
 }
