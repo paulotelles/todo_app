@@ -26,10 +26,10 @@
     @include border-radius(50%, 50%, 50%, 50%);
     right: 0;
   }
-}
-
-::placeholder {
-  color: $primary-color;
+  &::placeholder {
+    color: $primary-color;
+    font-family: $primary-font;
+  }
 }
 
 @include breakpoint(mobile) {

@@ -1,0 +1,65 @@
+.card {
+  position: relative;
+  padding: 30px;
+  background: $blue;
+  max-width: calc(25% - 15px);
+  @include border-radius(10px, 10px, 10px, 10px);
+
+  &-date {
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 7px;
+  }
+  &-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 19px;
+  }
+  &-text {
+    font-size: 24px;
+    font-weight: 600;
+    color: $white;
+  }
+  &-hover {
+    background: $blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @include border-radius(10px, 10px, 10px, 10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 0 30px 5px rgba(61, 90, 128, 0.21);
+  }
+  &-button {
+    width: 40px;
+    height: 40px;
+    background: $lightgray;
+    padding: 10px;
+    border: none;
+    @include border-radius(50%, 50%, 50%, 50%);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+.card.finalized {
+  opacity: 0.4;
+}
+
+.card-button-img {
+  width: 100%;
+}
+
+@include breakpoint(tablet) {
+  .card {
+    max-width: calc(50% - 15px);
+  }
+}
+
+@include breakpoint(mobile) {
+  .card {
+    max-width: 100%;
+  }
+}
