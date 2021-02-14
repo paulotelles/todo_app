@@ -6,3 +6,29 @@
 // -------------------------
 //  COMPONENTS IMPORT
 //--------------------------
+
+@import "../components/searchfield";
+
+// -------------------------
+//  PAGE STYLE
+//--------------------------
+.headerarea {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 21px;
+}
+
+.logo {
+  width: 100%;
+}
+
+@include breakpoint(mobile) {
+  .headerarea {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+  }
+}

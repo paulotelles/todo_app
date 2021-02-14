@@ -1,7 +1,16 @@
 // -------------------------
 //  COLORS
 //--------------------------
+$primary-color: #3d5a80;
+$blue: #98c1d9;
+$lightblue: #cedee8;
+$darkgray: #303030;
+$lightgray: #f2f2f2;
+$white: #ffffff;
 
 // -------------------------
 //  FONTS
 //--------------------------
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+$primary-font: "Poppins", sans-serif;
