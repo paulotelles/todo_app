@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Title</title>
     <link rel="stylesheet" href="./dist/css/homepage.css" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
+    <div class="overlay"></div>
     <header class="headerarea">
       <div class="logoarea">
         <img
@@ -30,7 +27,92 @@
         </form>
       </div>
     </header>
-    <main></main>
+    <main class="mainarea">
+      <div class="mainarea-header">
+        <div class="mainarea-tasks">
+          <h2 class="mainarea-title">Tarefas</h2>
+          <button class="button">adicionar tarefa</button>
+        </div>
+        <div class="mainarea-filter">
+          <div class="filterarea">
+            <input
+              type="radio"
+              name="taskstatus"
+              id=""
+              class="taskfilter"
+              value="all"
+              checked="checked"
+            />
+            <label for="all" class="taskfilter-label">Ver Todos</label>
+          </div>
+          <div class="filterarea">
+            <input
+              type="radio"
+              name="taskstatus"
+              id=""
+              class="taskfilter"
+              value="completed"
+            />
+            <label for="completed" class="taskfilter-label">Finalizadas</label>
+          </div>
+          <div class="filterarea">
+            <input
+              type="radio"
+              name="taskstatus"
+              id=""
+              class="taskfilter"
+              value="pending"
+            />
+            <label for="pending" class="taskfilter-label">Pendentes</label>
+          </div>
+        </div>
+      </div>
+      <div class="mainarea-cardarea">
+        <div class="card">
+          <div class="card-header">
+            <img src="./src/img/calendar.png" />
+            <h3 class="card-date">12/02/2021</h3>
+          </div>
+          <p class="card-text">Buscar pacote nos correios</p>
+        </div>
+        <div class="card finalized">
+          <div class="card-header">
+            <img src="./src/img/calendar.png" />
+            <h3 class="card-date">12/02/2021</h3>
+          </div>
+          <p class="card-text">Buscar pacote nos correios</p>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="./src/img/calendar.png" />
+            <h3 class="card-date">12/02/2021</h3>
+          </div>
+          <p class="card-text">Buscar pacote nos correios</p>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="./src/img/calendar.png" />
+            <h3 class="card-date">12/02/2021</h3>
+          </div>
+          <p class="card-text">Buscar pacote nos correios</p>
+        </div>
+        <div class="card">
+          <div class="card-hover">
+            <button class="card-button">
+              <img src="./src/img/trash.png" alt="" class="card-button-img" />
+            </button>
+            <button class="card-button">
+              <img src="./src/img/correct.png" alt="" class="card-button-img" />
+            </button>
+          </div>
+          <div class="card-header">
+            <img src="./src/img/calendar.png" />
+            <h3 class="card-date">12/02/2021</h3>
+          </div>
+          <p class="card-text">Buscar pacote nos correios</p>
+        </div>
+      </div>
+    </main>
     <script src="./dist/js/index.js"></script>
   </body>
 </html>
