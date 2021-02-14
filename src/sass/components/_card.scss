@@ -1,8 +1,8 @@
 .card {
   position: relative;
   padding: 30px;
-  background: $blue;
-  max-width: calc(25% - 15px);
+  background: $primary-color-light;
+  max-width: 255px;
   @include border-radius(10px, 10px, 10px, 10px);
 
   &-date {
@@ -21,7 +21,7 @@
     color: $white;
   }
   &-hover {
-    background: $blue;
+    background: $primary-color-light;
     position: absolute;
     top: 0;
     left: 0;
@@ -50,16 +50,4 @@
 
 .card-button-img {
   width: 100%;
-}
-
-@include breakpoint(tablet) {
-  .card {
-    max-width: calc(50% - 15px);
-  }
-}
-
-@include breakpoint(mobile) {
-  .card {
-    max-width: 100%;
-  }
 }
