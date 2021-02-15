@@ -8,4 +8,5 @@
   @include border-radius(3px, 3px, 3px, 3px);
   border: none;
   font-family: $primary-font;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.14);
 }

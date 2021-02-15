@@ -8,7 +8,29 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-    <div class="overlay"></div>
+    <div class="overlay-active">
+      <div class="popup">
+        <h2 class="popup-title">Adicionar Tarefa</h2>
+        <form class="newtask-form">
+          <input
+            type="text"
+            name="newtask-title"
+            id="newtask-title"
+            placeholder="Titulo da Tarefa"
+            class="newtask-input"
+          />
+          <input
+            type="date"
+            name="newtask-date"
+            id="newtask-date"
+            placeholder="Data"
+            class="newtask-input"
+          />
+          <button class="newtask-confirm button">confirmar</button>
+          <button class="newtask-cancel">cancelar</button>
+        </form>
+      </div>
+    </div>
     <header class="headerarea">
       <div class="logoarea">
         <img
@@ -76,6 +98,13 @@
           <p class="card-text">Buscar pacote nos correios</p>
         </div>
         <div class="card finalized">
+          <div class="card-header">
+            <img src="./src/img/calendar.png" />
+            <h3 class="card-date">12/02/2021</h3>
+          </div>
+          <p class="card-text">Buscar pacote nos correios</p>
+        </div>
+        <div class="card">
           <div class="card-header">
             <img src="./src/img/calendar.png" />
             <h3 class="card-date">12/02/2021</h3>

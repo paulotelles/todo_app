@@ -11,6 +11,7 @@
 @import "../components/button";
 @import "../components/radiofilter";
 @import "../components/card";
+@import "../components/newtaskform";
 
 // -------------------------
 //  PAGE STYLE
@@ -62,8 +63,8 @@
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     row-gap: 15px;
+    column-gap: 15px;
   }
 }
 
@@ -95,6 +96,25 @@
   z-index: 2;
   /* Specify a stack order in case you're using a different order for other elements */
   transition: 0.3s ease all;
+  overflow-x: hidden;
+}
+
+.popup {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  background: $primary-color-ligther;
+  width: 526px;
+  padding: 30px;
+  @include border-radius(10px, 10px, 10px, 10px);
+  text-align: center;
+  padding: 30px 52px;
+  transform: translate(-50%, -50%);
+}
+
+.popup-title {
+  font-size: 24px;
+  font-weight: 700;
 }
 
 @include breakpoint(tablet-max) {
@@ -134,7 +154,12 @@
       align-items: center;
     }
   }
+
   .filterarea {
     margin-left: 0;
+  }
+
+  .popup {
+    width: 300px;
   }
 }

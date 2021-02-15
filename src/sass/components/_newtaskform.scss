@@ -1,0 +1,43 @@
+.newtask-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.newtask-input {
+  padding: 12px;
+  border: none;
+  border-bottom: 1px solid $primary-color;
+  background: $primary-color-ligther;
+  color: $primary-color;
+  font-family: $primary-font;
+  font-size: 16px;
+  &::placeholder {
+    color: $primary-color;
+    font-family: $primary-font;
+    font-size: 16px;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.newtask-input:first-child {
+  margin-top: 41px;
+  margin-bottom: 26px;
+}
+
+.newtask-confirm {
+  margin: 33px auto 20px;
+  width: 177px;
+}
+
+.newtask-cancel {
+  background-color: $primary-color-ligther;
+  border: none;
+  color: $primary-color;
+  font-family: $primary-font;
+  font-size: 18px;
+  font-weight: 600;
+  width: 75px;
+  margin: 0 auto;
+}
