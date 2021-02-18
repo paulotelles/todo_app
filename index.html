@@ -11,7 +11,7 @@
     <div class="overlay">
       <div class="popup">
         <h2 class="popup-title">Adicionar Tarefa</h2>
-        <form class="newtask-form">
+        <form class="newtask-form" name="newtask">
           <input
             type="text"
             name="newtask-title"
@@ -29,8 +29,12 @@
             class="newtask-input"
             required
           />
-          <button class="newtask-confirm button">confirmar</button>
-          <button class="newtask-cancel">cancelar</button>
+          <input
+            type="submit"
+            class="newtask-confirm button"
+            value="confirmar"
+          />
+          <input type="reset" class="newtask-cancel" value="cancelar" />
         </form>
       </div>
     </div>
