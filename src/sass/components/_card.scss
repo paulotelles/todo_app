@@ -4,6 +4,7 @@
   background: $primary-color-light;
   width: 255px;
   @include border-radius(10px, 10px, 10px, 10px);
+  transition: 600ms ease all;
 
   &-date {
     font-size: 18px;
@@ -20,6 +21,7 @@
     font-weight: 600;
     color: $white;
   }
+
   &-hover {
     background: $primary-color-light;
     position: absolute;
@@ -29,10 +31,17 @@
     height: 100%;
     @include border-radius(10px, 10px, 10px, 10px);
     display: flex;
+    opacity: 0;
     align-items: center;
     justify-content: space-evenly;
     box-shadow: 0 0 30px 5px rgba(61, 90, 128, 0.21);
+    transition: 300ms ease all;
   }
+
+  &-hover:hover {
+    opacity: 1;
+  }
+
   &-button {
     width: 40px;
     height: 40px;
@@ -44,8 +53,9 @@
   }
 }
 
-.card.finalized {
+.card[data-status="Finalized"] {
   opacity: 0.4;
+  transition: 600ms ease all;
 }
 
 .card-button-img {
