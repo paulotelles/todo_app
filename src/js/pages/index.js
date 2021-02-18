@@ -9,9 +9,10 @@ const { buttonFinalize } = require("../modules/buttonFinalize");
 
 refreshCardArea();
 
-let mybutton = document.querySelector(".newtask-confirm");
-mybutton.addEventListener("click", (event) => {
+let mybutton = document.querySelector(".newtask-form");
+mybutton.addEventListener("submit", (event) => {
   event.preventDefault();
+
   let taskKey = generateKey(1, 10);
 
   createTask(taskKey, {
