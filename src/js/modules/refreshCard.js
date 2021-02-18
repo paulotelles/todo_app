@@ -1,6 +1,6 @@
 function refreshCard(taskKey) {
   let card = document.querySelector(`[data-key="${taskKey}"]`);
-  card.classList.add("finalized");
+  card.setAttribute("data-status", "Finalized");
   card.querySelector(".task-finalize").remove();
 }
 

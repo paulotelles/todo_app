@@ -53,7 +53,7 @@
   }
 }
 
-.card.finalized {
+.card[data-status="Finalized"] {
   opacity: 0.4;
   transition: 600ms ease all;
 }
