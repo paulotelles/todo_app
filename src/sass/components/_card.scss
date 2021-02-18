@@ -4,7 +4,7 @@
   background: $primary-color-light;
   width: 255px;
   @include border-radius(10px, 10px, 10px, 10px);
-  transition: 600ms ease all;
+  transition: 3s ease all;
 
   &-date {
     font-size: 18px;

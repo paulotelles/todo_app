@@ -1,4 +1,5 @@
 const { dateConvert } = require("../helpers/dateConvert");
+const { buttonDelete } = require("./buttonDelete");
 const { buttonFinalize } = require("./buttonFinalize");
 const { createCard } = require("./Createcard");
 const { getTasksLocalStorage } = require("./getTasksLocalStorage");
@@ -17,6 +18,7 @@ function refreshCardArea() {
     );
   });
   buttonFinalize();
+  buttonDelete();
 }
 
 module.exports.refreshCardArea = refreshCardArea;
