@@ -5,6 +5,10 @@ const { refreshCardArea } = require("../modules/refreshCardArea");
 const { radioFilter } = require("../modules/radioFilter");
 const { searchFilter } = require("../modules/searchFilter");
 const { noFilterCard } = require("../modules/noFilterCard");
+const { keyLimit } = require("../helpers/keyLimit");
+const {
+  changeDisplayLimitPopup,
+} = require("../helpers/changeDisplayLimitPopup");
 
 refreshCardArea();
 
@@ -35,7 +39,12 @@ buttonCancel.addEventListener("click", (event) => {
 let buttonNewTask = document.querySelector(".newtask-btn");
 buttonNewTask.addEventListener("click", (event) => {
   event.preventDefault();
-  changeDisplayOverlay("open");
+  if (keyLimit(20)) {
+    changeDisplayLimitPopup("open");
+  } else {
+    changeDisplayLimitPopup("close");
+  }
+  return changeDisplayOverlay("open");
 });
 
 let radioButton = document.querySelectorAll('input[name="taskstatus"]');
@@ -52,4 +61,10 @@ let searchField = document.querySelector(".search-input");
 searchField.addEventListener("input", (event) => {
   searchFilter(searchField.value);
   noFilterCard();
+});
+
+let closeButton = document.querySelector(".limittask-cancel");
+closeButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  return changeDisplayOverlay("close");
 });

@@ -4,6 +4,7 @@ function createCard(taskDate, taskText, taskStatus, taskKey) {
   card.classList.add("card");
   card.setAttribute("data-status", `${taskStatus}`);
   card.setAttribute("data-key", `${taskKey}`);
+  card.setAttribute("data-date", `${taskDate}`);
   card.innerHTML = `<div class="card-hover">
     <button class="card-button task-delete">
       <img src="./src/img/trash.png" alt="" class="card-button-img" />
