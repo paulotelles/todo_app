@@ -1,5 +1,8 @@
+const { noCardText } = require("./noCardText");
+
 function deleteCard(taskKey) {
-  return document.querySelector(`[data-key="${taskKey}"]`).remove();
+  document.querySelector(`[data-key="${taskKey}"]`).remove();
+  return noCardText();
 }
 
 module.exports.deleteCard = deleteCard;

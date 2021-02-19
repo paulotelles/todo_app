@@ -1,5 +1,3 @@
-const { searchFilter } = require("./searchFilter");
-
 function radioFilter(value) {
   let allCards = document.querySelectorAll(".card");
   let finalizedCards = document.querySelectorAll(
