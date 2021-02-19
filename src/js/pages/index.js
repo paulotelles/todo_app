@@ -1,13 +1,10 @@
-const { createCard } = require("../modules/Createcard");
 const { generateKey } = require("../helpers/generateKey");
 const { createTask } = require("../modules/createTask");
 const { changeDisplayOverlay } = require("../helpers/changeDisplayOverlay");
-const { dateConvert } = require("../helpers/dateConvert");
 const { refreshCardArea } = require("../modules/refreshCardArea");
-const { finalizeTask } = require("../modules/finalizeTask");
-const { buttonFinalize } = require("../modules/buttonFinalize");
 const { radioFilter } = require("../modules/radioFilter");
 const { searchFilter } = require("../modules/searchFilter");
+const { noFilterCard } = require("../modules/noFilterCard");
 
 refreshCardArea();
 
@@ -15,7 +12,7 @@ let mybutton = document.querySelector(".newtask-form");
 mybutton.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  let taskKey = generateKey(1, 10);
+  let taskKey = generateKey(1, 20);
 
   createTask(taskKey, {
     Date: document.getElementById("newtask-date").value,
@@ -45,13 +42,14 @@ let radioButton = document.querySelectorAll('input[name="taskstatus"]');
 radioButton.forEach((element) => {
   element.addEventListener("change", (event) => {
     if (element.checked) {
-      return radioFilter(element.value);
+      radioFilter(element.value);
+      noFilterCard();
     }
   });
 });
 
 let searchField = document.querySelector(".search-input");
 searchField.addEventListener("input", (event) => {
-  console.log(searchField.value);
   searchFilter(searchField.value);
+  noFilterCard();
 });

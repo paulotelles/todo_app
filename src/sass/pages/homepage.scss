@@ -113,6 +113,10 @@
   font-weight: 700;
 }
 
+.nocard-filter {
+  display: none;
+}
+
 @include breakpoint(tablet-max) {
   .headerarea {
     justify-content: center;

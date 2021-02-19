@@ -3,6 +3,7 @@ const { buttonDelete } = require("./buttonDelete");
 const { buttonFinalize } = require("./buttonFinalize");
 const { createCard } = require("./Createcard");
 const { getTasksLocalStorage } = require("./getTasksLocalStorage");
+const { noCardText } = require("./noCardText");
 
 function refreshCardArea() {
   let cardArea = document.querySelector(".mainarea-cardarea");
@@ -19,6 +20,7 @@ function refreshCardArea() {
   });
   buttonFinalize();
   buttonDelete();
+  noCardText();
 }
 
 module.exports.refreshCardArea = refreshCardArea;
