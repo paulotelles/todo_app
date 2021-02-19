@@ -1,7 +1,6 @@
 const { deleteTask } = require("./deleteTask");
 
 function buttonDelete() {
-  console.log("entrei no button finalize");
   let buttonChangeStatusTask = document.querySelectorAll(".task-delete");
   buttonChangeStatusTask.forEach((element) => {
     element.addEventListener("click", (event) => {
