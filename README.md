@@ -1,6 +1,5 @@
 # Gulp Static Boilerplate
 
-
 This is a standard for basic projects based on HTML + Sass and with support for multiple pages.
 
 Esse é um boilerplate para projetos básicos baseados em HTML + Sass e com suporte para multiplas páginas.
@@ -12,6 +11,7 @@ Esse é um boilerplate para projetos básicos baseados em HTML + Sass e com supo
 - Babel
 - Sass
 - Browsersync
+- Javascript
 
 ## Initializing / Iniciando
 
@@ -39,6 +39,7 @@ Esse é um boilerplate para projetos básicos baseados em HTML + Sass e com supo
 │    ├── img/
 │    │
 │    ├── js/
+│    │   ├── modules / # Components scripts / Scripts dos componentes
 │    │   ├── pages/ # Page Scripts / Scripts das páginas
 │    │
 │    ├── sass/
