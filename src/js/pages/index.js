@@ -4,7 +4,6 @@ const { changeDisplayOverlay } = require("../helpers/changeDisplayOverlay");
 const { refreshCardArea } = require("../modules/refreshCardArea");
 const { radioFilter } = require("../modules/radioFilter");
 const { searchFilter } = require("../modules/searchFilter");
-const { noFilterCard } = require("../modules/noFilterCard");
 const { keyLimit } = require("../helpers/keyLimit");
 const {
   changeDisplayLimitPopup,
@@ -16,7 +15,7 @@ let mybutton = document.querySelector(".newtask-form");
 mybutton.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  let taskKey = generateKey(1, 20);
+  let taskKey = generateKey(1, 21);
 
   createTask(taskKey, {
     Date: document.getElementById("newtask-date").value,
@@ -27,6 +26,7 @@ mybutton.addEventListener("submit", (event) => {
   document.querySelector(".newtask-form").reset();
   changeDisplayOverlay("close");
   refreshCardArea();
+  document.querySelector(".nocard-filter").style.display = "none";
 });
 
 let buttonCancel = document.querySelector(".newtask-cancel");
@@ -52,15 +52,18 @@ radioButton.forEach((element) => {
   element.addEventListener("change", (event) => {
     if (element.checked) {
       radioFilter(element.value);
-      noFilterCard();
     }
   });
 });
 
+// let finalizedRadioButton = querySelector(
+//   'input[name=taskstatus][id="finalized"]'
+// );
+// finalizedRadioButton.addEventListener("change");
+
 let searchField = document.querySelector(".search-input");
 searchField.addEventListener("input", (event) => {
   searchFilter(searchField.value);
-  noFilterCard();
 });
 
 let closeButton = document.querySelector(".limittask-cancel");
