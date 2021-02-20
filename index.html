@@ -3,13 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Title</title>
+    <title>To-Do App</title>
     <link rel="stylesheet" href="./dist/css/homepage.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="overlay">
       <div class="popup">
+        <div class="popup-limit">
+          <h2 class="popup-title">Atenção</h2>
+          <p>
+            Limite de 20 atividades. Delete uma das atividades para continuar.
+          </p>
+          <button class="limittask-cancel button">fechar</button>
+        </div>
         <h2 class="popup-title">Adicionar Tarefa</h2>
         <form class="newtask-form" name="newtask">
           <input
@@ -23,6 +30,8 @@
           />
           <input
             type="date"
+            min="2021-01-01"
+            max="2030-01-01"
             name="newtask-date"
             id="newtask-date"
             placeholder="Data"
@@ -78,25 +87,26 @@
             <input
               type="radio"
               name="taskstatus"
-              id="completed"
+              id="finalized"
               class="taskfilter"
-              value="completed"
+              value="finalized"
             />
-            <label for="completed" class="taskfilter-label">Finalizadas</label>
+            <label for="finalized" class="taskfilter-label">Finalizadas</label>
           </div>
           <div class="filterarea">
             <input
               type="radio"
               name="taskstatus"
-              id="pending"
+              id="active"
               class="taskfilter"
-              value="pending"
+              value="active"
             />
-            <label for="pending" class="taskfilter-label">Pendentes</label>
+            <label for="active" class="taskfilter-label">Pendentes</label>
           </div>
         </div>
       </div>
       <div class="mainarea-cardarea"></div>
+      <p class="nocard-filter">Não existem tarefas com este filtro.</p>
     </main>
     <script src="./dist/js/index.js"></script>
   </body>

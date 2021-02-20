@@ -106,11 +106,41 @@
   text-align: center;
   padding: 30px 52px;
   transform: translate(-50%, -50%);
+  transition: 0.3s ease all;
 }
 
 .popup-title {
   font-size: 24px;
   font-weight: 700;
+}
+
+.popup-limit {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  width: 100%;
+  background-color: $primary-color-ligther;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 526px;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  transition: display 3s linear;
+  & .popup-title {
+    margin-bottom: 20px;
+  }
+}
+
+.limittask-cancel {
+  margin-top: 20px;
+  width: 180px;
+}
+
+.nocard-filter {
+  display: none;
 }
 
 @include breakpoint(tablet-max) {

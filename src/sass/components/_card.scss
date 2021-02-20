@@ -1,10 +1,11 @@
 .card {
+  display: block;
   position: relative;
   padding: 30px;
   background: $primary-color-light;
   width: 255px;
   @include border-radius(10px, 10px, 10px, 10px);
-  transition: 600ms ease all;
+  transition: 3s ease all;
 
   &-date {
     font-size: 18px;
@@ -50,6 +51,7 @@
     border: none;
     @include border-radius(50%, 50%, 50%, 50%);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    cursor: pointer;
   }
 }
 
