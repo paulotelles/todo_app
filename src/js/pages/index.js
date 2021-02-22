@@ -8,6 +8,8 @@ const { keyLimit } = require("../helpers/keyLimit");
 const {
   changeDisplayLimitPopup,
 } = require("../helpers/changeDisplayLimitPopup");
+const { dateCheck } = require("../helpers/dateCheck");
+const { dateConvert } = require("../helpers/dateConvert");
 
 refreshCardArea();
 
@@ -16,6 +18,12 @@ mybutton.addEventListener("submit", (event) => {
   event.preventDefault();
 
   let taskKey = generateKey(1, 21);
+  if (
+    dateCheck(dateConvert(document.getElementById("newtask-date").value)) ===
+    false
+  ) {
+    return alert("A data deve ser no formato dd/mm/aaaa");
+  }
 
   createTask(taskKey, {
     Date: document.getElementById("newtask-date").value,
