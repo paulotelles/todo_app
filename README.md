@@ -7,7 +7,9 @@ Esse aplicativo foi desenvolvido para armazenar tarefas simples do dia-a-dia con
 
 ## :pushpin: Goal / Objetivo
 
-Make an application that demonstrates skills as a Front-End Developer, working mainly with data storage and consumption in Local Storage. Etapas estabelecidas:
+Make an application that demonstrates skills as a Front-End Developer, working mainly with data storage and consumption in Local Storage. Established steps:
+
+Fazer um aplicativo que demonstra habilidades como Desenvolvedor Front-End, utilizando como fonte de dados para armazenamento e obtenção de dados o Local Storage. Etapas estabelecidas:
 
 - [x] Criação do projeto
 - [x] Configuração base para o projeto
@@ -17,19 +19,7 @@ Make an application that demonstrates skills as a Front-End Developer, working m
 - [x] Criação das Páginas
 - [x] Criação dos Módulos Js
 - [x] Criação dos Helpers Js
-- [x] Criação do projeto
-
-Fazer um aplicativo que demonstra habilidades como Desenvolvedor Front-End, utilizando como fonte de dados para armazenamento e obtenção de dados o Local Storage.
-
-- [x] Criação do projeto
-- [x] Configuração base para o projeto
-- [x] Criação do HTML principal
-- [x] Criação dos Base
-- [x] Criação dos Componentes
-- [x] Criação das Páginas
-- [x] Criação dos Módulos Js
-- [x] Criação dos Helpers Js
-- [x] Criação do projeto
+- [x] Finalização do Projeto
 
 
 ## :rocket: Technologies / Tecnologias
