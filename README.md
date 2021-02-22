@@ -9,7 +9,7 @@ Esse aplicativo foi desenvolvido para armazenar tarefas simples do dia-a-dia con
 
 Goals: Make an application that demonstrates skills as a Front-End Developer, working mainly with data storage and consumption in Local Storage.
 
-Obejetivo: Fazer um aplicativo que demonstra habilidades como Desenvolvedor Front-End, utilizando como fonte de dados para armazenamento e obtenção de dados o Local Storage.
+Objetivo: Fazer um aplicativo que demonstra habilidades como Desenvolvedor Front-End, utilizando como fonte de dados para armazenamento e obtenção de dados o Local Storage.
 
 Challenges / Desafios:
 
