@@ -5,7 +5,7 @@ function deleteCard(taskKey) {
   let cards = document.querySelectorAll(".card");
   let anyCard = false;
   cards.forEach((card) => {
-    if (card.style.display === "block") {
+    if (card.style.display === "flex") {
       anyCard = true;
     }
   });
