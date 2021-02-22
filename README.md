@@ -1,10 +1,38 @@
-# Gulp Static Boilerplate
+# To-Do APP
 
-This is a standard for basic projects based on HTML + Sass and with support for multiple pages.
+This application was developed to store simple day-to-day tasks, containing text and date, to organize the user's routines.
 
-Esse é um boilerplate para projetos básicos baseados em HTML + Sass e com suporte para multiplas páginas.
+Esse aplicativo foi desenvolvido para armazenar tarefas simples do dia-a-dia contento texto e data, para organizar as rotinas do usuário.
 
-## Technologies / Tecnologias
+
+## :pushpin: Goal / Objetivo
+
+Make an application that demonstrates skills as a Front-End Developer, working mainly with data storage and consumption in Local Storage. Etapas estabelecidas:
+
+- [x] Criação do projeto
+- [x] Configuração base para o projeto
+- [x] Criação do HTML principal
+- [x] Criação dos Base
+- [x] Criação dos Componentes
+- [x] Criação das Páginas
+- [x] Criação dos Módulos Js
+- [x] Criação dos Helpers Js
+- [x] Criação do projeto
+
+Fazer um aplicativo que demonstra habilidades como Desenvolvedor Front-End, utilizando como fonte de dados para armazenamento e obtenção de dados o Local Storage.
+
+- [x] Criação do projeto
+- [x] Configuração base para o projeto
+- [x] Criação do HTML principal
+- [x] Criação dos Base
+- [x] Criação dos Componentes
+- [x] Criação das Páginas
+- [x] Criação dos Módulos Js
+- [x] Criação dos Helpers Js
+- [x] Criação do projeto
+
+
+## :rocket: Technologies / Tecnologias
 
 - HTML
 - Gulp
@@ -13,21 +41,35 @@ Esse é um boilerplate para projetos básicos baseados em HTML + Sass e com supo
 - Browsersync
 - Javascript
 
-## Initializing / Iniciando
+
+## :movie_camera: Live Version
+
+https://paulotelles.github.io/todo_app/
+
+
+## How to use / Como utilizar
+
+Inicialmente deve começar baixando o projeto em sua máquina.
+
+### Initializing / Iniciando
+
+Para iniciar você deve rodar o primeiro comando dentro da pasta que você baixou o projeto para instalar todas as dependências. Após a instalação que pode demorar alguns minutos dependendo da sua internet, você poderá compilar e executar o programa utilizando o segundo comando.
 
 `yarn install`
 </br>
 `gulp server`
 
-## Acessing Multiple Pages / Acessando Múltiplas Páginas
+### Acessing Multiple Pages / Acessando Múltiplas Páginas
 
 `http://localhost:3000/another-page.html`
 
 > To create new pages just add the respective files {name} .html at the root of the project.
 
-> Para criar novas páginas basta adicionar os respectivos arquivos {nome}.html na raiz do projeto.
+> Para criar novas páginas basta adicionar os respectivos arquivos {nome}.html na raiz do projeto. Lembrando que você deverá estiliza-la criando outro arquivo SASS para a mesma e colocar a referência de importação no Head do seu HTML.
 
-## Folders / Pastas
+### Folders / Pastas
+
+A estrutura de pastas visa manter o projeto organizado, facilitando a identificação dos arquivos.
 
 ```sh
 │
