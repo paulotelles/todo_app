@@ -5,21 +5,22 @@ This application was developed to store simple day-to-day tasks, containing text
 Esse aplicativo foi desenvolvido para armazenar tarefas simples do dia-a-dia contento texto e data, para organizar as rotinas do usuário.
 
 
-## :pushpin: Goal / Objetivo
+## :pushpin: Goals and challenges / Objetivos e desafios
 
-Make an application that demonstrates skills as a Front-End Developer, working mainly with data storage and consumption in Local Storage. Established steps:
+Goals: Make an application that demonstrates skills as a Front-End Developer, working mainly with data storage and consumption in Local Storage.
 
-Fazer um aplicativo que demonstra habilidades como Desenvolvedor Front-End, utilizando como fonte de dados para armazenamento e obtenção de dados o Local Storage. Etapas estabelecidas:
+Obejetivo: Fazer um aplicativo que demonstra habilidades como Desenvolvedor Front-End, utilizando como fonte de dados para armazenamento e obtenção de dados o Local Storage.
 
-- [x] Project creation / Criação do projeto
-- [x] Base configuration for the project / Configuração base para o projeto
-- [x] Creating the main HTML / Criação do HTML principal
-- [x] Base creation / Criação dos Base
-- [x] Component creation / Criação dos Componentes
-- [x] Creating Pages / Criação das Páginas
-- [x] Creation of Js Modules/ Criação dos Módulos Js
-- [x] Creation of Js Helpers / Criação dos Helpers Js
-- [x] Project Completion / Finalização do Projeto
+Challenges / Desafios:
+
+- [ ] Create different statuses for completed and pending tasks. / Criar status diferentes para tarefas finalizadas e pendentes.
+- [ ] Possibility to create and delete tasks. / Possibilidade de criar e excluir tarefas.
+- [ ] Implementation of methods for recording and retrieving data in Local Storage. / Implementação de métodos para gravação e recuperação de dados no Local Storage.
+- [ ] Limit of 20 registered tasks. / Limite de 20 tarefas cadastradas.
+- [ ] Sorting of tasks by most recent date. / Ordenação das tarefas por data mais recente.
+- [ ] Filter tasks by name. / Filtrar tarefas por nome.
+- [ ] Filter tasks by status. / Filtrar tarefas por status.
+- [ ] Responsive layout (mobile, tablet and desktop). / Layout responsivo (mobile, tablet e desktop).
 
 
 ## :rocket: Technologies / Tecnologias
