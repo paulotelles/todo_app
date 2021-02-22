@@ -13,14 +13,14 @@ Obejetivo: Fazer um aplicativo que demonstra habilidades como Desenvolvedor Fron
 
 Challenges / Desafios:
 
-- [ ] Create different statuses for completed and pending tasks. / Criar status diferentes para tarefas finalizadas e pendentes.
-- [ ] Possibility to create and delete tasks. / Possibilidade de criar e excluir tarefas.
-- [ ] Implementation of methods for recording and retrieving data in Local Storage. / Implementação de métodos para gravação e recuperação de dados no Local Storage.
-- [ ] Limit of 20 registered tasks. / Limite de 20 tarefas cadastradas.
-- [ ] Sorting of tasks by most recent date. / Ordenação das tarefas por data mais recente.
-- [ ] Filter tasks by name. / Filtrar tarefas por nome.
-- [ ] Filter tasks by status. / Filtrar tarefas por status.
-- [ ] Responsive layout (mobile, tablet and desktop). / Layout responsivo (mobile, tablet e desktop).
+- [x] Create different statuses for completed and pending tasks. / Criar status diferentes para tarefas finalizadas e pendentes.
+- [x] Possibility to create and delete tasks. / Possibilidade de criar e excluir tarefas.
+- [x] Implementation of methods for recording and retrieving data in Local Storage. / Implementação de métodos para gravação e recuperação de dados no Local Storage.
+- [x] Limit of 20 registered tasks. / Limite de 20 tarefas cadastradas.
+- [x] Sorting of tasks by most recent date. / Ordenação das tarefas por data mais recente.
+- [x] Filter tasks by name. / Filtrar tarefas por nome.
+- [x] Filter tasks by status. / Filtrar tarefas por status.
+- [x] Responsive layout (mobile, tablet and desktop). / Layout responsivo (mobile, tablet e desktop).
 
 
 ## :rocket: Technologies / Tecnologias
