@@ -18,6 +18,7 @@
     margin-bottom: 19px;
   }
   &-text {
+    word-break: break-all;
     font-size: 24px;
     font-weight: 600;
     color: $white;
