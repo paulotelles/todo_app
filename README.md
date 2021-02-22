@@ -9,7 +9,7 @@ Esse aplicativo foi desenvolvido para armazenar tarefas simples do dia-a-dia con
 
 Goals: Make an application that demonstrates skills as a Front-End Developer, working mainly with data storage and consumption in Local Storage.
 
-Obejetivo: Fazer um aplicativo que demonstra habilidades como Desenvolvedor Front-End, utilizando como fonte de dados para armazenamento e obtenção de dados o Local Storage.
+Objetivo: Fazer um aplicativo que demonstra habilidades como Desenvolvedor Front-End, utilizando como fonte de dados para armazenamento e obtenção de dados o Local Storage.
 
 Challenges / Desafios:
 
@@ -54,39 +54,3 @@ Para iniciar você deve rodar o primeiro comando dentro da pasta que você baixo
 </br>
 `gulp server`
 
-### :page_facing_up::page_facing_up: Acessing Multiple Pages / Acessando Múltiplas Páginas
-
-`http://localhost:3000/another-page.html`
-
-> To create new pages just add the respective files {name} .html at the root of the project.
-
-> Para criar novas páginas basta adicionar os respectivos arquivos {nome}.html na raiz do projeto. Lembrando que você deverá estiliza-la criando outro arquivo SASS para a mesma e colocar a referência de importação no Head do seu HTML.
-
-### :card_index_dividers: Folders / Pastas
-
-The folder structure aims to keep the project organized, facilitating the identification of files.
-
-A estrutura de pastas visa manter o projeto organizado, facilitando a identificação dos arquivos.
-
-```sh
-│
-├── README.md
-│
-└── dist/ # Folder with the finals style and scripts / Pasta com os arquivos finais de estilo e scripts.
-│
-└── src
-│    ├── img/
-│    │
-│    ├── js/
-│    │   ├── modules / # Components scripts / Scripts dos componentes
-│    │   ├── pages/ # Page Scripts / Scripts das páginas
-│    │
-│    ├── sass/
-│        ├── base/
-│        ├── components/
-│        ├── pages # Estilos das páginas (Apenas esses arquivos são convertidos para CSS pelo Gulp)
-│
-├── gulpfile.js # Gulp Configs
-│
-│
-```
