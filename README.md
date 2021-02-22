@@ -37,11 +37,11 @@ Fazer um aplicativo que demonstra habilidades como Desenvolvedor Front-End, util
 https://paulotelles.github.io/todo_app/
 
 
-## How to use / Como utilizar
+## :technologist: How to use / Como utilizar
 
 Inicialmente deve começar baixando o projeto em sua máquina.
 
-### Initializing / Iniciando
+### :computer: Initializing / Iniciando
 
 Para iniciar você deve rodar o primeiro comando dentro da pasta que você baixou o projeto para instalar todas as dependências. Após a instalação que pode demorar alguns minutos dependendo da sua internet, você poderá compilar e executar o programa utilizando o segundo comando.
 
@@ -49,7 +49,7 @@ Para iniciar você deve rodar o primeiro comando dentro da pasta que você baixo
 </br>
 `gulp server`
 
-### Acessing Multiple Pages / Acessando Múltiplas Páginas
+### :page_facing_up::page_facing_up: Acessing Multiple Pages / Acessando Múltiplas Páginas
 
 `http://localhost:3000/another-page.html`
 
@@ -57,7 +57,7 @@ Para iniciar você deve rodar o primeiro comando dentro da pasta que você baixo
 
 > Para criar novas páginas basta adicionar os respectivos arquivos {nome}.html na raiz do projeto. Lembrando que você deverá estiliza-la criando outro arquivo SASS para a mesma e colocar a referência de importação no Head do seu HTML.
 
-### Folders / Pastas
+### :card_index_dividers: Folders / Pastas
 
 A estrutura de pastas visa manter o projeto organizado, facilitando a identificação dos arquivos.
 
