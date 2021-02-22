@@ -39,7 +39,7 @@
 .mainarea {
   width: 90%;
   max-width: 1066px;
-  margin: 110px auto 0;
+  margin: 110px auto 30px;
   &-header {
     display: flex;
     flex-wrap: wrap;
@@ -187,5 +187,10 @@
 
   .popup {
     width: 300px;
+  }
+
+  .newtask-btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }

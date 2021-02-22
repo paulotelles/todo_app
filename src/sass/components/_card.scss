@@ -63,3 +63,19 @@
 .card-button-img {
   width: 100%;
 }
+
+@include breakpoint(tablet-max) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    &-hover {
+      position: relative;
+      order: 2;
+      background: none;
+      box-shadow: none;
+      border: none;
+      margin-top: 15px;
+      opacity: 1;
+    }
+  }
+}
