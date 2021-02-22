@@ -22,7 +22,7 @@ mybutton.addEventListener("submit", (event) => {
     dateCheck(dateConvert(document.getElementById("newtask-date").value)) ===
     false
   ) {
-    return alert("A data deve ser no formato dd/mm/aaaa");
+    return alert("A data deve ser no formato aaaa-mm-dd");
   }
 
   createTask(taskKey, {
