@@ -9,7 +9,7 @@ function searchFilter(string) {
     activeCards.forEach((card) => {
       if (card.querySelector(".card-text").innerHTML.includes(string)) {
         anyCard = true;
-        return (card.style.display = "block");
+        return (card.style.display = "flex");
       }
       return (card.style.display = "none");
     });
@@ -23,7 +23,7 @@ function searchFilter(string) {
     finalizedCards.forEach((card) => {
       if (card.querySelector(".card-text").innerHTML.includes(string)) {
         anyCard = true;
-        return (card.style.display = "block");
+        return (card.style.display = "flex");
       }
       return (card.style.display = "none");
     });
@@ -36,7 +36,7 @@ function searchFilter(string) {
     allCards.forEach((card) => {
       if (card.querySelector(".card-text").innerHTML.includes(string)) {
         anyCard = true;
-        return (card.style.display = "block");
+        return (card.style.display = "flex");
       }
       return (card.style.display = "none");
     });

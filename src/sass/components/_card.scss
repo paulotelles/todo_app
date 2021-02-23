@@ -1,5 +1,6 @@
 .card {
-  display: block;
+  display: flex;
+  flex-direction: column;
   position: relative;
   padding: 30px;
   background: $primary-color-light;
@@ -67,8 +68,6 @@
 
 @include breakpoint(tablet-max) {
   .card {
-    display: flex;
-    flex-direction: column;
     &-hover {
       position: relative;
       order: 2;

@@ -14,7 +14,7 @@ function radioFilter(value) {
     console.log(allCards.length);
     if (allCards.length > 0) {
       return allCards.forEach((card) => {
-        card.style.display = "block";
+        card.style.display = "flex";
         document.querySelector(".nocard-filter").style.display = "none";
       });
     }
@@ -26,7 +26,7 @@ function radioFilter(value) {
     });
     if (activeCards.length > 0) {
       return activeCards.forEach((card) => {
-        card.style.display = "block";
+        card.style.display = "flex";
         document.querySelector(".nocard-filter").style.display = "none";
       });
     }
@@ -38,7 +38,7 @@ function radioFilter(value) {
     });
     if (finalizedCards.length > 0) {
       return finalizedCards.forEach((card) => {
-        card.style.display = "block";
+        card.style.display = "flex";
         document.querySelector(".nocard-filter").style.display = "none";
       });
     }
